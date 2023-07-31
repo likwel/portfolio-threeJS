@@ -160,6 +160,7 @@ dracoLoader.setDecoderPath('draco/');
 const gltfLoader = new GLTFLoader();
 gltfLoader.setDRACOLoader(dracoLoader);
 gltfLoader.load(
+  // 'models/portfolio_nom_modif.glb',
   'models/test.glb',
   function (room) {
     // hide loader on loade

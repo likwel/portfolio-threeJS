@@ -406,3 +406,265 @@ footer {
   }
 }
 
+.container{
+  /* display:flex;
+  position: relative; */
+  position: absolute;
+  height:100vh;
+  /* height: 768px; */
+  /* background-image: url("/public/images/herobg.png") !important; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+body{
+  overflow: hidden;
+}
+
+header.hd_right{
+  top: 1rem;
+  left: 75%;
+  position: absolute;
+}
+
+header.hd_left{
+  top: 1rem;
+  left: 5%;
+  position: absolute;
+}
+
+.topnav {
+  overflow: hidden;
+  /* background-color: #333; */
+}
+
+.topnav a:nth-child(1){
+  float: left;
+}
+
+.topnav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color:  #AFBDFF;
+  border-style: double;
+  border: 1px solid #AFBDFF;
+}
+
+div.tr_vertical{
+  top: 8rem;
+  position: absolute;
+  left: 10%;
+}
+
+div.tr_vertical span{
+  color: #ff0000;
+}
+
+div.round_violet{
+  width: 10px;
+  height: 10px;
+  background-color: #8C60F9;
+  border-radius: 50%;
+}
+
+div.round_violet_vertical{
+  margin-top: -3px;
+  margin-left : 4px;
+  width: 0; 
+  height: 0; 
+  border-left: 1px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 300px solid #8C60F9;
+  
+}
+
+div.desc{
+  position: absolute;
+  top: 10rem;
+  left: 15%;
+}
+div.desc h1,div.desc h2,div.desc h3{
+  color: #fff;
+  padding-bottom: 1.5rem;
+}
+.name_space{
+  color: #8C60F9;
+}
+.post_space{
+  color: #871bf2;
+}
+
+.skills_list ul li{
+  margin-left: 20px;
+  font-style: italic;
+  list-style: none;
+  color: #AFBDFF;
+}
+
+.div_btn_to_3d{
+  position: absolute;
+  bottom: 5rem;
+  left: 45%;
+  right: 45%;
+}
+
+.btn-3d {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #8C60F9;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  border: 1px solid #8C60F9;
+}
+
+.btn-3d:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn-3d:active {
+  color: #000
+}
+
+.btn-3d:active:after {
+  background: transparent;
+}
+
+.btn-3d:hover:before {
+  opacity: 1;
+}
+
+.btn-3d:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+.form {
+  /* background-color: #15172b; */
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  /* padding: 20px; */
+  width: 320px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 20px;
+}
+
+.ic2 {
+  margin-top: 20px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  /* background-color: #15172b; */
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(10px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-35px) translateX(-10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #871bf2;
+}
+
+.mb_2{
+  margin-bottom: 1rem;
+}
+a{
+  text-decoration: none;
+  text-underline-offset: none;
+  color: #871bf2;
+}
