@@ -1,15 +1,15 @@
 import '/style.css';
 import bg from '/public/images/herobg.png';
 console.log("ettollll");
-import * as THREE from 'three';
+import * as THREE from "/node_modules/three/build/three.module.js";
 import * as dat from 'dat.gui';
 import gsap from 'gsap';
 import Stats from 'three/addons/libs/stats.module.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
-import { FontLoader } from 'three/addons/loaders/FontLoader.js';
-import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader';
+import { DRACOLoader } from '/node_modules/three/examples/jsm/loaders/DRACOLoader';
+import { FontLoader } from '/node_modules/three/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from '/node_modules/three/examples/jsm/geometries/TextGeometry.js';
 // Debug
 // const gui = new dat.GUI()
 
