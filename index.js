@@ -147,7 +147,3 @@ document.querySelectorAll("body > header.hd_right > div > a").forEach(menu=>{
 
   })
 })
-
-function open3d() {
-  window.location.href="/main.html"
-}
