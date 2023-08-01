@@ -12,6 +12,7 @@ import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 // Debug
 // const gui = new dat.GUI()
 
+console.log("ettooooooo");
 // Scene
 const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.01,1000);
