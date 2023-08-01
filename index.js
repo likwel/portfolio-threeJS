@@ -1,5 +1,5 @@
 import './style.css';
-import bg from '/images/herobg.png';
+import bg from '/public/images/herobg.png';
 console.log("ettollll");
 import * as THREE from 'three';
 import * as dat from 'dat.gui';
